@@ -61,17 +61,17 @@ function Home() {
   return (
     <div>
           
-          <div className='w-full h-[960px]' style={{background:" linear-gradient(180deg, #F9F7FF 0%, #EEE8FF 100%)"}}>  
+          <div className='overflow-hidden  w-full   h-[100vh]' style={{background:" linear-gradient(180deg, #F9F7FF 0%, #EEE8FF 100%)"}}>  
           <div>
               <Navbar scroll1 = {scroll} scroll2 = {scroll2}/>
           </div>
 
           <div  ref = {homeref} className=' w-full h-[780px] mt-16 flex flex-col gap-[30px] items-center'>
             
-            <div  ><h4 className='text-center font-Roboto font-semibold text-[65px] ' >Simplify Your Customer Success </h4> 
+            <div  ><h4 className='text-center font-Roboto font-semibold text-[65px] p-3 ' >Simplify Your Customer Success </h4> 
             <h4 className='text-center font-Roboto font-semibold text-[65px] '>And Reduce Churn</h4></div>
             
-            <div className='pl-96 pr-96 '> <p className='text-[16px] font-Roboto  italic text-center text-gray-900'>“After years of managing customer relationships through disconnected tools and spreadsheets, I knew there had to be a better way. That's why we are building Triumph IQ” – Founder, Triumph IQ</p></div>
+            <div className='md:pl-96 md:pr-96   '> <p className='text-[16px] font-Roboto  italic text-center text-gray-900'>“After years of managing customer relationships through disconnected tools and spreadsheets, I knew there had to be a better way. That's why we are building Triumph IQ” – Founder, Triumph IQ</p></div>
 
           
             <div  className='flex justify-center items-center mt-4 gap-2 '>
@@ -93,7 +93,7 @@ function Home() {
                 
               <button
                 type="submit"
-                className="pl-3 pr-3 bg-purple-600 w-[190px] h-[56px] font-Roboto text-[16px] text-white font-medium rounded-xl active:scale-95 transition-transform border-[1.5px]-black"
+                className="pl-3 pr-3 bg-purple-600 w-full h-[56px] font-Roboto text-[16px] text-white font-medium rounded-xl active:scale-95 transition-transform border-[1.5px]-black"
               >
                 <span >Request Early Access</span>
               </button>
@@ -104,20 +104,20 @@ function Home() {
               
             </div>
 
-            <div className='w-[1120px] h-[419px] mt-[-10px]'>
-            <img src= {frameimage} alt="" />
+            <div className='w-full h-[419px] mt-[-10px]'>
+            <img src= "" alt="" />
           </div>
 
           </div>
           
         </div>
 
-        <div className='w-full h-[614.5px] mt-14 pt-2'> 
+        <div className='w-full h-[130vh] md:h-[50vh] lg:h-[50vh] xl:h-[100vh]  mt-14 pt-2 overflow-hidden'> 
             <div className='text-center w-full h-[85px] mt-5'>
               <h3 className='text-[45px] font-Roboto font-bold'>Customer Success Is Tough!</h3>
             </div>
             
-            <div className='flex flex-wrap content-center justify-center gap-8 w-full h-[469.5px] mt-8'>
+            <div className='  flex flex-wrap content-center justify-center gap-8 w-full mt-8  md:mt-4 xl:mt-10  '>
               {Problems.map((items) => {
                 return (
                   <Pbs image = {items.image} id = {items.id} heading = {items.header} description = {items.description}/>  
@@ -129,12 +129,12 @@ function Home() {
             
         </div>
 
-        <div className='bg-[#F5F2FF] w-full h-[419px] mt-20 flex flex-col items-center'>
-          <div className='pt-8'>
-          <h3 className='text-[45px] font-Roboto font-bold '>That’s why we are building Triumph IQ</h3>
+        <div className='bg-[#F5F2FF] w-full h-[90vh] mt-20 flex flex-col items-center md:p-10  md:mt-[-10px]   xl:h-[70vh] '>
+          <div className='md:pt-8 '>
+          <h3 className='text-[45px] font-Roboto font-bold text-center'>That’s why we are building Triumph IQ</h3>
           </div>
           
-          <div className='flex flex-wrap content-center justify-center gap-8 w-full h-[469.5px] mt-8'>
+          <div className='flex flex-wrap content-center justify-center gap-8 w-full h-[100vh] md:mt-8 lg:mt-[1px] mt-[-200px] xl:mt-[10px]'>
               {Solution.map((items) => {
                 return (
                   <Sol  image = {items.image} id = {items.id} heading = {items.header} description = {items.description}/>
@@ -143,20 +143,20 @@ function Home() {
           </div>
         </div>
 
-        <div className=' h-[100vh] w-full mt-14 flex flex-col items-center  '>
+        {/* <div className=' h-[100vh] w-full mt-14 flex flex-col items-center  '>
               <div className='pt-4 w-full h-[65px]'>
                 <h3 className='text-[45px] font-Roboto font-bold text-center'>Features That Transform Your Customer Success</h3>
               </div>
               
-              <div className='flex items-center gap-[40px] p-[40px]'>
+              <div className='flex items-center gap-[40px] p-[40px] w-full'>
                 <div  className = 'bg-slate-100 w-[644px] h-[570px] rounded-2xl border-[1.5px] border-slate-200'>
-                  <img src={Collage1} alt="" />
+                  <img src="" alt="" />
                 </div>
                 
                 <div className=' w-[548px] h-[570px] rounded-2xl  flex flex-col gap-[30px]  '>
                   
-                  <div className=' shadow-xl w-[548px] h-[270px] flex flex-col  gap-[20px] p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
-                    <div className='flex flex-col gap-[20px]'>
+                  <div className=' shadow-xl w-full h-[270px] flex flex-col  gap-[20px] p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
+                    <div className='flex flex-col gap-[20px] w-full'>
                       <h3 className='w-[488px] h-[35px] text-black/80 font-Roboto font-medium text-[24px]'>Unified Data Management</h3>
 
                       <p className='font-Roboto font-normal w-[488px] h-[46px] text-[14px] text-gray-900'>Still juggling customer data across multiple platforms? You’re not alone—70% of companies do the same. But now, there’s a better way.</p>
@@ -196,12 +196,12 @@ function Home() {
                   
                 </div>
               </div>
-        </div>
+        </div> */}
 
 
-        <div className=' h-[100vh] w-full mt-1 flex flex-col items-center '>
+        {/* <div className=' h-[100vh] w-full mt-1 flex flex-col items-center '>
               
-              <div className='flex items-center gap-[40px] p-[40px]'>
+              <div className='flex items-center gap-[40px] p-[40px] w-full'>
                 
                 
                 <div className=' w-[548px] h-[570px] rounded-2xl  flex flex-col gap-[30px]  '>
@@ -260,7 +260,7 @@ function Home() {
         <div className=' h-[100vh] w-full mt-1 flex flex-col items-center '>
               
               
-              <div className='flex items-center gap-[40px] p-[40px]'>
+              <div className='flex items-center gap-[40px] p-[40px] w-full'>
                 <div className='bg-slate-100 w-[644px] h-[693px] rounded-2xl border-[1.5px] border-slate-200'>
                   <img src={Collage1} alt="" />
                 </div>
@@ -335,13 +335,13 @@ function Home() {
                   
                 </div>
               </div>
-        </div>
+        </div> */}
         
-        <div className='w-full h-[539.16px] bg-purple-200 mt-24 pt-[80px] pb-[80px] pr-[20px] pl-[130px] rounded-3xl'>
+        {/* <div className='w-full h-[539.16px] bg-purple-200 mt-24 pt-[80px] pb-[80px] pr-[20px] pl-[130px] rounded-3xl'>
           
-          <div className='w-[1240px] h-[379.16px]  rounded-2xl bg-white pt-[48px] pb-[48px] pr-[29px] pl-[29px] flex justify-between items-center shadow-lg'>
+          <div className='w-full h-[379.16px]  rounded-2xl bg-white pt-[48px] pb-[48px] pr-[29px] pl-[29px] flex justify-between items-center shadow-lg'>
             
-            <div className='w-[588px] h-[260.7px]  p-[16px] flex flex-col gap-10 items-center'>
+            <div className='w-full h-[260.7px]  p-[16px] flex flex-col gap-10 items-center'>
               <div>
                 
                 <div className='w-[566px] h-[94px]'>
@@ -370,15 +370,15 @@ function Home() {
 
             </div>
             
-            <div className='w-[466.66px] h-[283.16px] bg-green-300 relative overflow-hidden'>
+            <div className='w-full h-[283.16px] bg-green-300 relative overflow-hidden'>
               <img className='absolute top-[-96px] object-cover' src={image1} alt="" />
             </div>
           </div>
 
-        </div>
+        </div> */}
 
 
-        <div  ref={contactRef} className='w-full h-[223px]  p-[64px] flex gap-[100px]'>
+        <div  ref={contactRef} className='w-full   p-[64px] flex gap-[100px]'>
 
           <div className='w-[1312px] h-[100px]  ml-[70px] mt-[-20px] flex flex-col  gap-[1px]'>
               
@@ -397,7 +397,7 @@ function Home() {
         </div>
 
 
-        <div className='w-full h-[23px]  text-center mb-5 '>
+        <div className='w-full   text-center mb-5 '>
           <span className='font-Roboto font-normal text-[20px] text-gray-800'> Copyright © 2025 Triumph IQ</span>
         </div>
 
