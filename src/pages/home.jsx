@@ -7,9 +7,12 @@ import Sol from '../components/Sol';
 import Solution from '../solution';
 import image1 from "../assets/Graph.png"
 import frameimage from "../assets/frame.png"
-import Collage1 from "../assets/collage1.svg"
-import Collage2 from "../assets/collage2.svg"
 
+import Collage0 from "../assets/collage0.png"
+import Collage1 from "../assets/collage1.png"
+import Collage2 from "../assets/collage2.png"
+import Collage3 from "../assets/collage3.png"
+import bgImg from "../assets/bgImg.png"
 
 
 function Home() {
@@ -68,7 +71,16 @@ function Home() {
 
           <div  ref = {homeref} className=' w-full h-[780px] mt-16 flex flex-col gap-[30px] items-center'>
             
-            <div  ><h4 className='text-center font-Roboto font-semibold text-[65px] p-3 ' >Simplify Your Customer Success </h4> 
+            <div  >
+              <div className="flex">
+                <div className="relative inline-block">
+                  <img src={bgImg} className="w-[270.11px] h-[99.4px]" alt="background" />
+                  <span className="absolute inset-0 text-center font-Roboto font-semibold text-[65px]">
+                    Simplify
+                  </span>
+                </div>
+                <div className="text-center font-Roboto font-semibold text-[65px] pl-3">Your Customer Success</div>
+              </div>
             <h4 className='text-center font-Roboto font-semibold text-[65px] '>And Reduce Churn</h4></div>
             
             <div className='md:pl-96 md:pr-96   '> <p className='text-[16px] font-Roboto  italic text-center text-gray-900'>“After years of managing customer relationships through disconnected tools and spreadsheets, I knew there had to be a better way. That's why we are building Triumph IQ” – Founder, Triumph IQ</p></div>
@@ -104,8 +116,8 @@ function Home() {
               
             </div>
 
-            <div className='w-full h-[419px] mt-[-10px]'>
-            <img src= "" alt="" />
+            <div className='w-[77.8%] h-[419px] mt-[-10px]'>
+            <img src= {Collage0} alt="" />
           </div>
 
           </div>
@@ -143,14 +155,14 @@ function Home() {
           </div>
         </div>
 
-        {/* <div className=' h-[100vh] w-full mt-14 flex flex-col items-center  '>
+        <div className=' h-[100vh] w-full mt-14 flex flex-col items-center'>
               <div className='pt-4 w-full h-[65px]'>
                 <h3 className='text-[45px] font-Roboto font-bold text-center'>Features That Transform Your Customer Success</h3>
               </div>
               
-              <div className='flex items-center gap-[40px] p-[40px] w-full'>
-                <div  className = 'bg-slate-100 w-[644px] h-[570px] rounded-2xl border-[1.5px] border-slate-200'>
-                  <img src="" alt="" />
+              <div className='flex flex-row justify-center items-center gap-[40px] pt-[40px] pr-[30px] w-full'>
+                <div  className = 'w-[684px] h-[570px] rounded-2xl'>
+                  <img src={Collage1} className="w-full h-full" alt="" />
                 </div>
                 
                 <div className=' w-[548px] h-[570px] rounded-2xl  flex flex-col gap-[30px]  '>
@@ -196,73 +208,66 @@ function Home() {
                   
                 </div>
               </div>
-        </div> */}
-
-
-        {/* <div className=' h-[100vh] w-full mt-1 flex flex-col items-center '>
+        </div>
+        <div className=' h-[100vh] w-full mt-1 flex flex-col items-center'>
               
-              <div className='flex items-center gap-[40px] p-[40px] w-full'>
-                
+              <div className='flex flex-row justify-center items-center gap-[40px] pt-[40px] pl-[40px]  w-full'>
+               
                 
                 <div className=' w-[548px] h-[570px] rounded-2xl  flex flex-col gap-[30px]  '>
                   
-                  <div className='shadow-xl w-[548px] h-[270px] flex flex-col  gap-[20px] p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
-                    <div className='flex flex-col gap-[20px]'>
-                      <h3 className='w-[488px] h-[35px] text-black/80 font-Roboto font-medium text-[24px]'>Manage customer communication</h3>
+                <div className='shadow-xl w-[548px] h-[270px] flex flex-col gap-[20px] p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
+                      <div className='flex flex-col gap-[20px]'>
+                        <h3 className='w-[488px] h-[35px] text-black/80 font-Roboto font-medium text-[24px]'>Manage customer communication</h3>
 
-                      <p className='font-Roboto font-normal w-[488px] h-[46px] text-[14px] text-gray-900'>When should you reach out, or when was your last conversation? Still a question? Let Us Guide Your Customer Engagement and deliver maximum value.</p>
-                    </div>
-                    
-                    <div>
-                      <ul className=' mt-4 flex flex-col gap-2' >
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Automatically capture customer communications</li>
-                        
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Create engagement formulas to get the right alerts</li>
-                        
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Integrate easily with your communication platforms</li>
-                        
-                      </ul>
-                    </div>
+                        <p className='font-Roboto font-normal w-[488px] h-[46px] text-[14px] text-gray-900'>When should you reach out, or when was your last conversation? Still a question? Let Us Guide Your Customer Engagement and deliver maximum value.</p>
+                      </div>
+                      
+                      <div>
+                        <ul className=' mt-4 flex flex-col gap-2' >
+                          <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Automatically capture customer communications</li>
+                          
+                          <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Create engagement formulas to get the right alerts</li>
+                          
+                          <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Integrate easily with your communication platforms</li>
+                          
+                        </ul>
+                      </div>
 
-                  </div>
-
-                  <div className=' shadow-xl w-[548px] h-[270px] flex flex-col  gap-[20px] p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
-                    <div className='flex flex-col gap-[20px]'>
-                      <h3 className='w-[488px] h-[35px] text-black/80 font-Roboto font-medium text-[24px]'>Predictive Churn Score</h3>
-
-                      <p className='font-Roboto font-normal w-[488px] h-[46px] text-[14px] text-gray-900'>70% of CSMs find it difficult to assess customer health - leading to unexpected churn.</p>
-                    </div>
-                    
-                    <div>
-                      <ul className=' flex flex-col gap-2 ' >
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Track feature adoption, product usage for better visibility</li>
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Setup custom risk formula - as per your needs</li>
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Get actionable insights for at-risk accounts</li>
-                        
-                      </ul>
                     </div>
 
-                  </div>
+                    <div className=' shadow-xl w-[548px] h-[270px] flex flex-col  gap-[20px] p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
+                      <div className='flex flex-col gap-[20px]'>
+                        <h3 className='w-[488px] h-[35px] text-black/80 font-Roboto font-medium text-[24px]'>Predictive Churn Score</h3>
+
+                        <p className='font-Roboto font-normal w-[488px] h-[46px] text-[14px] text-gray-900'>70% of CSMs find it difficult to assess customer health - leading to unexpected churn.</p>
+                      </div>
+                      
+                      <div>
+                        <ul className=' flex flex-col gap-2 ' >
+                          <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Track feature adoption, product usage for better visibility</li>
+                          <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Setup custom risk formula - as per your needs</li>
+                          <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Get actionable insights for at-risk accounts</li>
+                          
+                        </ul>
+                      </div>
+
+                    </div>
                   
                   
                 </div>
-
-                <div className='bg-slate-100 w-[644px] h-[570px] rounded-2xl border-[1.5px] border-slate-200'>
-                  <img src= {Collage2} alt="" />
+                <div  className = 'w-[684px] h-[570px] rounded-2xl'>
+                  <img src={Collage2} className="w-full h-full" alt="" />
                 </div>
               </div>
-              
-              <div></div>
-              
-              <div></div>
         </div>
 
         <div className=' h-[100vh] w-full mt-1 flex flex-col items-center '>
               
               
-              <div className='flex items-center gap-[40px] p-[40px] w-full'>
-                <div className='bg-slate-100 w-[644px] h-[693px] rounded-2xl border-[1.5px] border-slate-200'>
-                  <img src={Collage1} alt="" />
+              <div className='flex items-center justify-center gap-[40px] pt-[40px] pr-[30px]  w-full'>
+                <div className='w-[684px] h-[693px] rounded-2xl'>
+                  <img src={Collage3} className="w-full h-full" alt="" />
                 </div>
                 
                 <div className=' w-[548px] h-[693px] rounded-2xl   flex flex-col gap-[30px]  '>
@@ -335,7 +340,7 @@ function Home() {
                   
                 </div>
               </div>
-        </div> */}
+        </div>
         
         {/* <div className='w-full h-[539.16px] bg-purple-200 mt-24 pt-[80px] pb-[80px] pr-[20px] pl-[130px] rounded-3xl'>
           
