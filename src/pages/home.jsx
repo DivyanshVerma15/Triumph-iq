@@ -64,7 +64,9 @@ function Home() {
   return (
     <div>
           
-          <div className='overflow-hidden  w-full   h-[100vh] relative' style={{background:" linear-gradient(180deg, #F9F7FF 0%, #EEE8FF 100%)"}}>  
+          <div className='overflow-hidden  w-full   min-h-[960px] relative' style={{background:" linear-gradient(180deg, #F9F7FF 0%, #EEE8FF 100%)"}}>
+
+             
           
           <div className='absolute right-0'>
             <img src={gradient} alt="" />
@@ -74,7 +76,7 @@ function Home() {
               <Navbar scroll1 = {scroll} scroll2 = {scroll2}/>
           </div>
 
-          <div  ref = {homeref} className=' w-full h-[780px] mt-16 flex flex-col gap-[30px] items-center'>
+          <div  ref = {homeref} className=' w-full h-[780px] mt-16 flex flex-col gap-[30px] items-center '>
 
             
             
@@ -129,15 +131,15 @@ function Home() {
               
             </div>
 
-            <div className='w-[77.8%] h-[419px] mt-[-10px] '>
-            <img src= {Collage0} alt="" />
-          </div>
+            <div className='w-[77.8%] h-[419px] bg-yellow-200 absolute bottom-0 object-fill'>
+              <img className='w-full h-auto object-cover' src={Collage0} alt="" />
+            </div>
 
           </div>
           
         </div>
 
-        <div className='w-full h-[130vh] md:h-[50vh] lg:h-[50vh] xl:h-[100vh]  mt-14 pt-2 overflow-hidden'> 
+         <div className='w-full h-[130vh] md:h-[50vh] lg:h-[50vh] xl:h-[100vh]  mt-14 pt-2 overflow-hidden'> 
             <div className='text-center w-full h-[85px] mt-5'>
               <h3 className='text-[45px] font-Roboto font-bold'>Customer Success Is Tough!</h3>
             </div>
@@ -154,12 +156,12 @@ function Home() {
             
         </div>
 
-        <div className='bg-[#F5F2FF] w-full h-[90vh] mt-20 flex flex-col items-center md:p-10  md:mt-[-10px]   xl:h-[70vh] '>
-          <div className='md:pt-8 '>
+        <div className='bg-[#F5F2FF] w-full h-[417.88px] pt-[30px] pr-[64px] pl-[64px] pb-[45px] flex flex-col gap-[30px] items-center  '>
+          <div className='w-[1312px] h-[85px] '>
           <h3 className='text-[45px] font-Roboto font-bold text-center'>That’s why we are building Triumph IQ</h3>
           </div>
           
-          <div className='flex flex-wrap content-center justify-center gap-8 w-full h-[100vh] md:mt-8 lg:mt-[1px] mt-[-200px] xl:mt-[10px]'>
+          <div className='flex flex-wrap content-center justify-center gap-[25px] w-[1312px] h-[227.88px]  overflow-hidden'>
               {Solution.map((items) => {
                 return (
                   <Sol  image = {items.image} id = {items.id} heading = {items.header} description = {items.description}/>
@@ -168,7 +170,7 @@ function Home() {
           </div>
         </div>
 
-        <div className=' h-[100vh] w-full mt-14 flex flex-col items-center'>
+        {/*<div className=' h-[100vh] w-full mt-14 flex flex-col items-center'>
               <div className='pt-4 w-full h-[65px]'>
                 <h3 className='text-[45px] font-Roboto font-bold text-center'>Features That Transform Your Customer Success</h3>
               </div>
@@ -355,7 +357,7 @@ function Home() {
               </div>
         </div>
         
-        {/* <div className='w-full h-[539.16px] bg-purple-200 mt-24 pt-[80px] pb-[80px] pr-[20px] pl-[130px] rounded-3xl'>
+        <div className='w-full h-[539.16px] bg-purple-200 mt-24 pt-[80px] pb-[80px] pr-[20px] pl-[130px] rounded-3xl'>
           
           <div className='w-full h-[379.16px]  rounded-2xl bg-white pt-[48px] pb-[48px] pr-[29px] pl-[29px] flex justify-between items-center shadow-lg'>
             
@@ -393,7 +395,7 @@ function Home() {
             </div>
           </div>
 
-        </div> */}
+        </div>
 
 
         <div  ref={contactRef} className='w-full   p-[64px] flex gap-[100px]'>
@@ -412,12 +414,12 @@ function Home() {
           <div>
 
           </div>
-        </div>
+        </div> */}
 
 
-        <div className='w-full   text-center mb-5 '>
+        {/* <div className='w-full   text-center mb-5 '>
           <span className='font-Roboto font-normal text-[20px] text-gray-800'> Copyright © 2025 Triumph IQ</span>
-        </div>
+        </div> */}
 
         
 

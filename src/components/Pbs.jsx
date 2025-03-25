@@ -10,7 +10,7 @@ function Pbs({image , id, heading , description}) {
         
         <div className='flex flex-col items-center gap-4'>
             <div className='w-full h-[28px]'>
-                <h5 className='text-[24px] font-Roboto font- text-center text-gray-1000 '>{heading}</h5>
+                <h5 className='text-[24px] font-Roboto font-semibold text-center text-gray-900 text-opacity-80 '>{heading}</h5>
             </div>
             
             <div className='w-[328px] h-[48px]'>
