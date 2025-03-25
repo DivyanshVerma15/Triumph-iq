@@ -131,15 +131,15 @@ function Home() {
               
             </div>
 
-            <div className='w-[77.8%] h-[419px] bg-yellow-200 absolute bottom-0 object-fill'>
-              <img className='w-full h-auto object-cover' src={Collage0} alt="" />
+            <div className='w-[1120px] min-h-[419px]  flex items-end absolute bottom-0 '>
+              <img className='w-full h-auto max-h-full object-contain ' src={Collage0} alt="" />
             </div>
 
           </div>
           
         </div>
 
-         <div className='w-full h-[130vh] md:h-[50vh] lg:h-[50vh] xl:h-[100vh]  mt-14 pt-2 overflow-hidden'> 
+          
             <div className='text-center w-full h-[85px] mt-5'>
               <h3 className='text-[45px] font-Roboto font-bold'>Customer Success Is Tough!</h3>
             </div>
@@ -154,28 +154,31 @@ function Home() {
               
               
             
-        </div>
-
-        <div className='bg-[#F5F2FF] w-full h-[417.88px] pt-[30px] pr-[64px] pl-[64px] pb-[45px] flex flex-col gap-[30px] items-center  '>
-          <div className='w-[1312px] h-[85px] '>
-          <h3 className='text-[45px] font-Roboto font-bold text-center'>That’s why we are building Triumph IQ</h3>
-          </div>
+        
+          <div style={{background:'rgb(245,242,255)'}} className='h-[419px] p-[0.5em] mt-24'  >    
+            
+            <div className='text-center w-full h-[85px] mt-[25px]  '>
+              <h3 className='text-[45px] font-Roboto font-bold text-[rgba(16,16,16,1)]'>That’s why we are building Triumph IQ</h3>
+            </div>
           
-          <div className='flex flex-wrap content-center justify-center gap-[25px] w-[1312px] h-[227.88px]  overflow-hidden'>
-              {Solution.map((items) => {
-                return (
-                  <Sol  image = {items.image} id = {items.id} heading = {items.header} description = {items.description}/>
-                )
-              })}
-          </div>
-        </div>
+          
+            <div className='flex flex-wrap content-center justify-center gap-[25px] w-[full] h-[227.88px] mt-[25px] overflow-hidden '>
+                {Solution.map((items) => {
+                  return (
+                    <Sol  image = {items.image} id = {items.id} heading = {items.header} description = {items.description}/>
+                  )
+                })}
+            </div>
 
-        {/*<div className=' h-[100vh] w-full mt-14 flex flex-col items-center'>
+          </div>
+        
+
+        <div className=' h-[850px] w-full mt-14 flex flex-col items-center'>
               <div className='pt-4 w-full h-[65px]'>
-                <h3 className='text-[45px] font-Roboto font-bold text-center'>Features That Transform Your Customer Success</h3>
+                <h3 className='text-[45px] font-Roboto font-bold text-center text-[rgba(16,16,16,1)]'>Features That Transform Your Customer Success</h3>
               </div>
               
-              <div className='flex flex-row justify-center items-center gap-[40px] pt-[40px] pr-[30px] w-full'>
+              <div className='flex flex-row justify-center items-center gap-[40px] pt-[40px] pr-[30px] w-full mt-16'>
                 <div  className = 'w-[684px] h-[570px] rounded-2xl'>
                   <img src={Collage1} className="w-full h-full" alt="" />
                 </div>
@@ -184,16 +187,16 @@ function Home() {
                   
                   <div className=' shadow-xl w-full h-[270px] flex flex-col  gap-[20px] p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
                     <div className='flex flex-col gap-[20px] w-full'>
-                      <h3 className='w-[488px] h-[35px] text-black/80 font-Roboto font-medium text-[24px]'>Unified Data Management</h3>
+                      <h3 className='w-[488px] h-[35px] text-[rgba(16,16,16,0.8)] font-Roboto font-semibold text-[30px]'>Unified Data Management</h3>
 
-                      <p className='font-Roboto font-normal w-[488px] h-[46px] text-[14px] text-gray-900'>Still juggling customer data across multiple platforms? You’re not alone—70% of companies do the same. But now, there’s a better way.</p>
+                      <p className='font-Roboto font-normal w-[488px] h-[46px] text-[14px] text-[rgba(67,67,67,1)]'>Still juggling customer data across multiple platforms? You’re not alone—70% of companies do the same. But now, there’s a better way.</p>
                     </div>
                     
                     <div>
                       <ul className=' flex flex-col gap-2 ' >
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'> <span className='mr-[10px]'>✔️</span>Import and update customer data effortlessly</li>
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Integrate with your existing data source</li>
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Maintain real-time data accuracy</li>
+                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'> <span className='mr-[10px]'>✔️</span>Import and update customer data effortlessly</li>
+                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Integrate with your existing data source</li>
+                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Maintain real-time data accuracy</li>
                       </ul>
                     </div>
 
@@ -201,19 +204,19 @@ function Home() {
 
                   <div className='shadow-xl w-[548px] h-[270px] flex flex-col  gap-[20px] p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
                     <div className='flex flex-col gap-[20px]'>
-                      <h3 className=' w-[488px] h-[35px] text-black/80 font-Roboto font-medium text-[24px]'>Customizable, Yet Simple</h3>
+                      <h3 className=' w-[488px] h-[35px] text-[rgba(16,16,16,0.8)] font-Roboto font-semibold text-[30px]'>Customizable, Yet Simple</h3>
 
-                      <p className='font-Roboto font-normal w-[488px] h-[46px] text-[14px] text-gray-900'>Unlike legacy tools that take 10-12 weeks to implement, we get you up and running fast.</p>
+                      <p className='font-Roboto font-normal w-[488px] h-[46px] text-[14px] text-[rgba(67,67,67,1)]'>Unlike legacy tools that take 10-12 weeks to implement, we get you up and running fast.</p>
                     </div>
                     
                     <div>
                       <ul className=' flex flex-col gap-2 ' >
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'> <span className='mr-[10px]'>✔️</span>Customize Fields, Dashboards and Health Score easily
+                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'> <span className='mr-[10px]'>✔️</span>Customize Fields, Dashboards and Health Score easily
                         </li>
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'> <span className='mr-[10px]'>✔️</span>Adapt the platform to fit your organization’s unique needs</li>
+                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'> <span className='mr-[10px]'>✔️</span>Adapt the platform to fit your organization’s unique needs</li>
 
 
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'> <span className='mr-[10px]'>✔️</span>No technical expertise required
+                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'> <span className='mr-[10px]'>✔️</span>No technical expertise required
                         </li>
                       </ul>
                     </div>
@@ -224,7 +227,11 @@ function Home() {
                 </div>
               </div>
         </div>
-        <div className=' h-[100vh] w-full mt-1 flex flex-col items-center'>
+
+        
+
+
+         <div className=' h-[850px] w-full mt-10 '>
               
               <div className='flex flex-row justify-center items-center gap-[40px] pt-[40px] pl-[40px]  w-full'>
                
@@ -233,18 +240,18 @@ function Home() {
                   
                 <div className='shadow-xl w-[548px] h-[270px] flex flex-col gap-[20px] p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
                       <div className='flex flex-col gap-[20px]'>
-                        <h3 className='w-[488px] h-[35px] text-black/80 font-Roboto font-medium text-[24px]'>Manage customer communication</h3>
+                        <h3 className='w-[488px] h-[35px] text-[rgba(16,16,16,0.8)] font-Roboto font-semibold text-[30px]'>Manage customer communication</h3>
 
-                        <p className='font-Roboto font-normal w-[488px] h-[46px] text-[14px] text-gray-900'>When should you reach out, or when was your last conversation? Still a question? Let Us Guide Your Customer Engagement and deliver maximum value.</p>
+                        <p className='font-Roboto font-normal w-[488px] h-[46px] text-[14px] text-[rgba(67,67,67,1)]'>When should you reach out, or when was your last conversation? Still a question? Let Us Guide Your Customer Engagement and deliver maximum value.</p>
                       </div>
                       
                       <div>
                         <ul className=' mt-4 flex flex-col gap-2' >
-                          <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Automatically capture customer communications</li>
+                          <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Automatically capture customer communications</li>
                           
-                          <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Create engagement formulas to get the right alerts</li>
+                          <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Create engagement formulas to get the right alerts</li>
                           
-                          <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Integrate easily with your communication platforms</li>
+                          <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Integrate easily with your communication platforms</li>
                           
                         </ul>
                       </div>
@@ -253,16 +260,16 @@ function Home() {
 
                     <div className=' shadow-xl w-[548px] h-[270px] flex flex-col  gap-[20px] p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
                       <div className='flex flex-col gap-[20px]'>
-                        <h3 className='w-[488px] h-[35px] text-black/80 font-Roboto font-medium text-[24px]'>Predictive Churn Score</h3>
+                        <h3 className='w-[488px] h-[35px] text-[rgba(16,16,16,0.8)] font-Roboto font-semibold text-[30px]'>Predictive Churn Score</h3>
 
-                        <p className='font-Roboto font-normal w-[488px] h-[46px] text-[14px] text-gray-900'>70% of CSMs find it difficult to assess customer health - leading to unexpected churn.</p>
+                        <p className='font-Roboto font-normal w-[488px] h-[46px] text-[14px] text-[rgba(67,67,67,1)]'>70% of CSMs find it difficult to assess customer health - leading to unexpected churn.</p>
                       </div>
                       
                       <div>
                         <ul className=' flex flex-col gap-2 ' >
-                          <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Track feature adoption, product usage for better visibility</li>
-                          <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Setup custom risk formula - as per your needs</li>
-                          <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Get actionable insights for at-risk accounts</li>
+                          <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Track feature adoption, product usage for better visibility</li>
+                          <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Setup custom risk formula - as per your needs</li>
+                          <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Get actionable insights for at-risk accounts</li>
                           
                         </ul>
                       </div>
@@ -275,9 +282,9 @@ function Home() {
                   <img src={Collage2} className="w-full h-full" alt="" />
                 </div>
               </div>
-        </div>
+        </div> 
 
-        <div className=' h-[100vh] w-full mt-1 flex flex-col items-center '>
+        <div className=' h-[850px] w-full mt-[-110px] flex flex-col items-center '>
               
               
               <div className='flex items-center justify-center gap-[40px] pt-[40px] pr-[30px]  w-full'>
@@ -289,18 +296,18 @@ function Home() {
                   
                   <div className='shadow-xl w-[548px] h-[211px] flex flex-col  gap-[3px] p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
                     <div className='flex flex-col gap-[15px] '>
-                      <h3 className='w-[488px] h-[35px] text-black/80 font-Roboto font-medium text-[24px]'>Deal Management</h3>
+                      <h3 className='w-[488px] h-[35px] text-[rgba(16,16,16,0.8)] font-Roboto font-semibold text-[30px]'>Deal Management</h3>
 
                       
                     </div>
                     
                     <div className='mt-4'>
                       <ul className=' flex flex-col gap-2 ' >
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Identify the right opportunity with a predictive upsell score</li>
+                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Identify the right opportunity with a predictive upsell score</li>
                         
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Create and Manage upsell and cross-sell opportunities
+                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Create and Manage upsell and cross-sell opportunities
                         </li>
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Monitor pipeline progress with intuitive visualizations
+                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Monitor pipeline progress with intuitive visualizations
                         </li>
                       </ul>
                     </div>
@@ -309,20 +316,20 @@ function Home() {
 
                   <div className=' shadow-xl w-[548px] h-[211px] flex flex-col  gap-[3px] p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
                     <div className='flex flex-col gap-[15px] '>
-                      <h3 className='w-[488px] h-[35px] text-black/80 font-Roboto font-medium text-[24px]'>Success Plans</h3>
+                      <h3 className='w-[488px] h-[35px] text-[rgba(16,16,16,0.8)] font-Roboto font-semibold text-[30px]'>Success Plans</h3>
 
                       
                     </div>
                     
                     <div className='mt-4'>
                       <ul className=' flex flex-col gap-2 ' >
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Systematically document and track customer objectives
+                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Systematically document and track customer objectives
                         </li>
                         
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Ensure goal visibility through team transitions
+                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Ensure goal visibility through team transitions
 
                         </li>
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Instantly access historical context
+                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Instantly access historical context
 
                         </li>
                       </ul>
@@ -333,18 +340,18 @@ function Home() {
 
                   <div className='shadow-xl w-[548px] h-[211px] flex flex-col  gap-[3px] p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
                     <div className='flex flex-col gap-[15px] '>
-                      <h3 className='w-[495px] h-[35px] text-black/80 font-Roboto font-medium text-[24px]'>Comprehensive Analytics Dashboard</h3>
+                      <h3 className='w-[495px] h-[35px] text-[rgba(16,16,16,0.8)] font-Roboto font-semibold text-[30px] '>Comprehensive Analytics Dashboard</h3>
 
                       
                     </div>
                     
                     <div className='mt-4'>
                       <ul className=' flex flex-col gap-2' >
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Get a unified view of all accounts</li>
+                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Get a unified view of all accounts</li>
                         
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Quantify CSM impact on revenue
+                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Quantify CSM impact on revenue
                         </li>
-                        <li className='text-16px font-Roboto font-normal text-gray-700/80 ml-[-5px]'><span className='mr-[10px]'>✔️</span>Track account growth metrics
+                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Track account growth metrics
 
 
                         </li>
@@ -357,32 +364,33 @@ function Home() {
               </div>
         </div>
         
-        <div className='w-full h-[539.16px] bg-purple-200 mt-24 pt-[80px] pb-[80px] pr-[20px] pl-[130px] rounded-3xl'>
+        <div className='w-full h-[539.16px] bg-[rgba(211,199,244,1)] mt-[1px] pt-[80px] pb-[80px] pr-[20px] pl-[20px] flex items-center justify-center rounded-3xl'>
           
-          <div className='w-full h-[379.16px]  rounded-2xl bg-white pt-[48px] pb-[48px] pr-[29px] pl-[29px] flex justify-between items-center shadow-lg'>
+          <div className='w-[1240px] h-[379.16px]  rounded-2xl bg-white pt-[48px] pb-[48px] pr-[29px] pl-[29px] flex justify-between items-center shadow-lg'>
             
-            <div className='w-full h-[260.7px]  p-[16px] flex flex-col gap-10 items-center'>
-              <div>
+            <div className='w-[588px] h-[260.7px]  p-[16px] flex flex-col gap-10 items-center'>
+              <div className='flex flex-col gap-6 items-center w-[566px]'>
                 
                 <div className='w-[566px] h-[94px]'>
-                  <h3 className='font-Roboto font-semibold text-[30px]'>Ready to Transform Your Customer Success Operations?</h3>
+                  <h3 className='font-Roboto font-bold text-[40px] text-[rgba(16,16,16,1)]'>Ready to Transform Your </h3>
+                  <h3 className='font-Roboto font-bold text-[40px] text-[rgba(16,16,16,1)] mt-[-10px]'>Customer Success Operations? </h3>
                 </div>
 
                 <div className='h-[38.69px] w-[566px] '>
-                  <p className=' font-Roboto text-[16px]'>Book a demo today and see how Triumph IQ can help you deliver exceptional customer experiences while driving business growth.</p>
+                  <p className=' font-Roboto text-[16px] text-[rgba(67,67,67,1)] font-normal'>Book a demo today and see how Triumph IQ can help you deliver exceptional customer experiences while driving business growth.</p>
                 </div>
 
               </div>
 
-              <div className='w-[590px] h-[48px] flex gap-[10px] items-center'>
-                <form onSubmit={handleSubmit} className='flex gap-3 items-center   '>
+              <div className='w-[566px] h-[48px] flex gap-[10px] items-center'>
+                <form onSubmit={handleSubmit} className='flex gap-3 items-center w-[556px]  '>
                     
-                  <div className='border-[1px] border-black pl-2  flex items-center gap-4 rounded-lg '>     
-                    <IoMdMail className='text-purple-600' />
-                    <input name='email' value={email}  onChange={(e) => setEmail(e.target.value)}  className='outline-none  w-[368px] h-[48px]  ' type="email" placeholder='Enter Your Email' />
+                  <div className='border-[1px] border-black pl-2  flex items-center  gap-4 rounded-lg '>     
+                    <IoMdMail className='text-[#6938ef]' />
+                    <input name='email' value={email}  onChange={(e) => setEmail(e.target.value)}  className='outline-none  w-[340px] h-[48px] placeholder:font-Dm placeholder:text-[rgba(67,67,67,0,8)] placeholder:font-medium placeholder:text-[14px] ' type="email" placeholder='Enter Your Email' />
                   </div>
 
-                  <button type='submit' className='active:scale-95 transition-transform w-[180px] h-[48px] bg-indigo-600  text-white font-Dm text-[14px] rounded-2xl'>Schedule Your Demo</button>
+                  <button type='submit' className='active:scale-95 transition-transform w-[180px] h-[48px] bg-[rgba(105,56,239,1)]  rounded-2xl flex items-center justify-center'><span className='text-white font-Dm text-[14px] font-semibold w-[140px] h-[18px]'>Schedule Your Demo</span></button>
                 </form>
                 
                 
@@ -390,7 +398,7 @@ function Home() {
 
             </div>
             
-            <div className='w-full h-[283.16px] bg-green-300 relative overflow-hidden'>
+            <div className='w-[466.66px] h-[283.16px] bg-green-300 relative overflow-hidden'>
               <img className='absolute top-[-96px] object-cover' src={image1} alt="" />
             </div>
           </div>
@@ -398,7 +406,7 @@ function Home() {
         </div>
 
 
-        <div  ref={contactRef} className='w-full   p-[64px] flex gap-[100px]'>
+       <div  ref={contactRef} className='w-full   p-[64px] flex gap-[100px]'>
 
           <div className='w-[1312px] h-[100px]  ml-[70px] mt-[-20px] flex flex-col  gap-[1px]'>
               
@@ -414,12 +422,12 @@ function Home() {
           <div>
 
           </div>
-        </div> */}
+        </div>
 
 
-        {/* <div className='w-full   text-center mb-5 '>
+        <div className='w-full   text-center mb-5 '>
           <span className='font-Roboto font-normal text-[20px] text-gray-800'> Copyright © 2025 Triumph IQ</span>
-        </div> */}
+        </div>
 
         
 
