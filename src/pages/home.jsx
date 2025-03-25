@@ -7,7 +7,7 @@ import Sol from '../components/Sol';
 import Solution from '../solution';
 import image1 from "../assets/Graph.png"
 import frameimage from "../assets/frame.png"
-
+import gradient from "../assets/Vector 15.svg"
 import Collage0 from "../assets/collage0.png"
 import Collage1 from "../assets/collage1.png"
 import Collage2 from "../assets/collage2.png"
@@ -64,24 +64,37 @@ function Home() {
   return (
     <div>
           
-          <div className='overflow-hidden  w-full   h-[100vh]' style={{background:" linear-gradient(180deg, #F9F7FF 0%, #EEE8FF 100%)"}}>  
+          <div className='overflow-hidden  w-full   h-[100vh] relative' style={{background:" linear-gradient(180deg, #F9F7FF 0%, #EEE8FF 100%)"}}>  
+          
+          <div className='absolute right-0'>
+            <img src={gradient} alt="" />
+          </div>
+          
           <div>
               <Navbar scroll1 = {scroll} scroll2 = {scroll2}/>
           </div>
 
           <div  ref = {homeref} className=' w-full h-[780px] mt-16 flex flex-col gap-[30px] items-center'>
+
             
-            <div  >
-              <div className="flex">
+            
+            <div className='flex flex-col items-center' >
+              
+              <div className='w-[137px] h-[16px] '><span className='font-Roboto font-medium text-[12px] text-center '>Built by CSM’s, for CSM’s</span></div>
+
+              <div className="flex ">
+
                 <div className="relative inline-block">
                   <img src={bgImg} className="w-[270.11px] h-[99.4px]" alt="background" />
                   <span className="absolute inset-0 text-center font-Roboto font-semibold text-[65px]">
                     Simplify
                   </span>
                 </div>
-                <div className="text-center font-Roboto font-semibold text-[65px] pl-3">Your Customer Success</div>
-              </div>
-            <h4 className='text-center font-Roboto font-semibold text-[65px] '>And Reduce Churn</h4></div>
+                
+                  <div className="text-center font-Roboto font-semibold text-[65px] pl-3 ]">Your Customer Success</div>
+                  </div>
+                  <h4 className='text-center font-Roboto font-semibold text-[65px] mt-[-10px] '>And Reduce Churn</h4> 
+                  </div>
             
             <div className='md:pl-96 md:pr-96   '> <p className='text-[16px] font-Roboto  italic text-center text-gray-900'>“After years of managing customer relationships through disconnected tools and spreadsheets, I knew there had to be a better way. That's why we are building Triumph IQ” – Founder, Triumph IQ</p></div>
 
@@ -90,13 +103,13 @@ function Home() {
             
             <form onSubmit={handleSubmit} className="flex items-center gap-2  pl-4">
               
-              <div className='border-[1px] border-black rounded-xl flex items-center gap-4 pl-4'>
-                <IoMdMail className="text-purple-600" />
+              <div className='border-[1px] border-purple-100 rounded-xl flex items-center gap-1 pl-4 bg-white'>
+                <IoMdMail className="text-[#6938ef] w-[23px] h-[23px]" />
                 <input
                   name="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className=" text-black w-[368px] h-[56px] font-Roboto text-[16px] font-medium rounded-xl outline-none bg-transparent  focus:ring-0 focus:outline-none autofill:bg-transparent "
+                  className=" text-black w-[368px] h-[56px] font-Roboto text-[16px] font-medium rounded-xl outline-none bg-transparent  focus:ring-0 focus:outline-none autofill:bg-transparent placeholder:font-Roboto placeholder:text-[14px] placeholder:font-medium placeholder:text-gray-700 placeholder:text-opacity-80  "
                   type="email"
                   placeholder="Enter your Email"
                   required
@@ -105,9 +118,9 @@ function Home() {
                 
               <button
                 type="submit"
-                className="pl-3 pr-3 bg-purple-600 w-full h-[56px] font-Roboto text-[16px] text-white font-medium rounded-xl active:scale-95 transition-transform border-[1.5px]-black"
+                className="pl-3 pr-3 bg-[#6938ef] w-full h-[56px] font-Roboto text-[16px] text-white font-medium rounded-xl active:scale-95 transition-transform border-[1.5px]-black"
               >
-                <span >Request Early Access</span>
+                <span className='font-normal' >Request Early Access</span>
               </button>
               
             </form>
@@ -116,7 +129,7 @@ function Home() {
               
             </div>
 
-            <div className='w-[77.8%] h-[419px] mt-[-10px]'>
+            <div className='w-[77.8%] h-[419px] mt-[-10px] '>
             <img src= {Collage0} alt="" />
           </div>
 
