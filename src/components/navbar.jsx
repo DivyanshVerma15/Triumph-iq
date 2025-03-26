@@ -15,13 +15,7 @@ function Navbar({scroll1, scroll2}) {
                 <li onClick={scroll1}  className='cursor-pointer'>Contact Us</li>
             </ul>
         </div>
-        <div >
-            <button className='flex gap-[5px] justify-center bg-black w-[217px] h-[54px] p-[15px] rounded-xl relative' >
-              <span className='text-white text-center absolute left-[23px] font-Roboto'>Request Early Access</span>
-              <FaArrowRight className='text-white absolute top-[19px] right-[20px]'/>
-            </button>
-            
-        </div>
+        
     </div>
   )
 }

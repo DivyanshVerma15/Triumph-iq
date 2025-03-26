@@ -139,7 +139,7 @@ function Home() {
           
         </div>
 
-          
+          <div className='pr-[8.87px] pl-[8.87px] pb-[13.31px]'>
             <div className='text-center w-[full] h-[60px] md:h-[85px] mt-5'>
               <h3 className='text-[24px] md:text-[45px] font-Roboto font-bold'>Customer Success Is Tough!</h3>
             </div>
@@ -151,18 +151,18 @@ function Home() {
                 )
               })}
             </div>  
-              
+          </div>    
               
             
         
-          <div style={{background:'rgb(245,242,255)'}} className='h-[419px] p-[0.5em] mt-24'  >    
+          <div style={{background:'rgb(245,242,255)'}} className='h-[572.06px] md:h-[419px]  p-[0.5em] mt-[50px] md:mt-24 pl-[33.54px]  pr-[33.54px]'  >    
             
-            <div className='text-center w-full h-[85px] mt-[25px]  '>
-              <h3 className='text-[45px] font-Roboto font-bold text-[rgba(16,16,16,1)]'>That’s why we are building Triumph IQ</h3>
+            <div className='text-center w-full h-[74px] md:h-[85px] mt-[12px] md:mt-[25px]  '>
+              <h3 className='text-[24px] md:text-[45px] font-Roboto font-bold text-[rgba(16,16,16,1)]'>That’s why we are building Triumph IQ</h3>
             </div>
           
           
-            <div className='flex flex-wrap content-center justify-center gap-[25px] w-[full] h-[227.88px] mt-[25px] overflow-hidden '>
+            <div className='flex flex-wrap content-center justify-center gap-[15px] md:gap-[25px] w-[full] h-[443px] md:h-[227.88px] mt-[25px] overflow-hidden '>
                 {Solution.map((items) => {
                   return (
                     <Sol  image = {items.image} id = {items.id} heading = {items.header} description = {items.description}/>
@@ -173,50 +173,50 @@ function Home() {
           </div>
         
 
-        <div className=' h-[850px] w-full mt-14 flex flex-col items-center'>
+        <div className='h-[780.24px] md:h-[850px] w-full mt-14 flex flex-col items-center'>
               <div className='pt-4 w-full h-[65px]'>
-                <h3 className='text-[45px] font-Roboto font-bold text-center text-[rgba(16,16,16,1)]'>Features That Transform Your Customer Success</h3>
+                <h3 className='text-[24px]  md:text-[45px] font-Roboto font-bold text-center text-[rgba(16,16,16,1)]'>Features That Transform Your Customer Success</h3>
               </div>
               
-              <div className='flex flex-wrap justify-center content-center gap-[40px] pt-[40px] pr-[30px] w-full mt-16'>
-                <div  className = 'w-full md:w-[684px] h-[570px] rounded-2xl'>
+              <div className='flex flex-wrap justify-center content-center gap-[15px] md:gap-[40px] pt-[21.6px] md:pt-[40px] pr-[20px] md:pr-[30px] w-full mt-4 md:mt-16 pl-[20px] pb-[21.6px]'>
+                <div  className = ' w-[353px] h-[300px] md:w-[684px] md:h-[570px] rounded-2xl'>
                   <img src={Collage1} className="w-full h-full" alt="" />
                 </div>
                 
-                <div className='w-full md:w-[548px] h-[570px] rounded-2xl  flex flex-col gap-[30px]  '>
+                <div className='w-[353px] md:w-[548px] h-[371.93px] md:h-[570px] rounded-2xl  flex flex-col gap-[10px] md:gap-[30px]  '>
                   
-                  <div className=' shadow-xl w-full h-[270px] flex flex-col  gap-[20px] p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
-                    <div className='flex flex-col gap-[20px] w-full'>
-                      <h3 className='w-full md:w-[488px] h-[35px] text-[rgba(16,16,16,0.8)] font-Roboto font-semibold text-[30px]'>Unified Data Management</h3>
+                  <div className=' shadow-xl w-full h-[192px] md:h-[270px] flex flex-col gap-[10.83px] md:gap-[20px] p-[16.24px] md:p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
+                    <div className='flex flex-col md:gap-[20px] gap-[5.14px] w-full'>
+                      <h3 className='w-[320.52px] md:w-[488px] h-[21px] md:h-[35px] text-[rgba(16,16,16,0.8)] font-Roboto font-semibold text-[18px] md:text-[30px]'>Unified Data Management</h3>
 
-                      <p className='font-Roboto font-normal w-full md:w-[488px] h-[46px] text-[14px] text-[rgba(67,67,67,1)]'>Still juggling customer data across multiple platforms? You’re not alone—70% of companies do the same. But now, there’s a better way.</p>
+                      <p className='font-Roboto font-normal w-[320.52px] md:w-[488px] h-[54px] md:h-[46px] text-[12px] md:text-[14px] text-[rgba(67,67,67,1)]'>Still juggling customer data across multiple platforms? You’re not alone—70% of companies do the same. But now, there’s a better way.</p>
                     </div>
                     
                     <div>
-                      <ul className=' flex flex-col gap-2 ' >
-                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'> <span className='mr-[10px]'>✔️</span>Import and update customer data effortlessly</li>
-                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Integrate with your existing data source</li>
-                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Maintain real-time data accuracy</li>
+                      <ul className=' flex flex-col gap-1 md:gap-2 ' >
+                        <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'> <span className='mr-[10px]'>✔️</span>Import and update customer data effortlessly</li>
+                        <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Integrate with your existing data source</li>
+                        <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Maintain real-time data accuracy</li>
                       </ul>
                     </div>
 
                   </div>
 
-                  <div className='shadow-xl w-full md:w-[548px] h-[270px] flex flex-col  gap-[20px] p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
-                    <div className='flex flex-col gap-[20px]'>
-                      <h3 className='w-full md:w-[488px] h-[35px] text-[rgba(16,16,16,0.8)] font-Roboto font-semibold text-[30px]'>Customizable, Yet Simple</h3>
+                  <div className='shadow-xl w-[353px] md:w-[548px] h-[270px] flex flex-col gap-[10.83px] md:gap-[20px] p-[16.24px] md:p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
+                    <div className='flex flex-col gap-[5.41px] md:gap-[20px]'>
+                      <h3 className='w-[320.54px] md:w-[488px] h-[19px] md:h-[35px] text-[rgba(16,16,16,0.8)] font-Roboto font-semibold text-[18px] md:text-[30px]'>Customizable, Yet Simple</h3>
 
-                      <p className='font-Roboto font-normal w-full md:w-[488px] h-[46px] text-[14px] text-[rgba(67,67,67,1)]'>Unlike legacy tools that take 10-12 weeks to implement, we get you up and running fast.</p>
+                      <p className='font-Roboto font-normal w-[320.54] md:w-[488px] h-[32px] md:h-[46px] text-[12px] md:text-[14px] text-[rgba(67,67,67,1)]'>Unlike legacy tools that take 10-12 weeks to implement, we get you up and running fast.</p>
                     </div>
                     
                     <div>
-                      <ul className=' flex flex-col gap-2 ' >
-                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'> <span className='mr-[10px]'>✔️</span>Customize Fields, Dashboards and Health Score easily
+                      <ul className=' flex flex-col gap-1 md:gap-2 ' >
+                        <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'> <span className='mr-[10px]'>✔️</span>Customize Fields, Dashboards and Health Score easily
                         </li>
-                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'> <span className='mr-[10px]'>✔️</span>Adapt the platform to fit your organization’s unique needs</li>
+                        <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'> <span className='mr-[10px]'>✔️</span>Adapt the platform to fit your organization’s unique needs</li>
 
 
-                        <li className='text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'> <span className='mr-[10px]'>✔️</span>No technical expertise required
+                        <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'> <span className='mr-[10px]'>✔️</span>No technical expertise required
                         </li>
                       </ul>
                     </div>
@@ -231,7 +231,7 @@ function Home() {
         
 
 
-         <div className=' h-[850px] w-full mt-10 '>
+         <div className='h-[745.24px]  md:h-[850px] w-full mt-10 '>
               
               <div className='flex flex-wrap justify-center content-center gap-[40px] pt-[40px] pl-[40px]  w-full'>
                
