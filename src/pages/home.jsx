@@ -385,9 +385,10 @@ function Home() {
               <div className='w-[566px] h-[48px] flex gap-[10px] items-center'>
                 <form onSubmit={handleSubmit} className='flex gap-3 items-center w-[556px]  '>
                     
-                  <div className='border-[1px] border-black pl-2  flex items-center  gap-4 rounded-lg '>     
+                  <div className='border-[1px] border-[rgba(234,237,240,1)] pl-2  flex items-center  gap-4 rounded-lg bg-[rgba(248,249,250,1)]
+ '>     
                     <IoMdMail className='text-[#6938ef]' />
-                    <input name='email' value={email}  onChange={(e) => setEmail(e.target.value)}  className='outline-none  w-[340px] h-[48px] placeholder:font-Dm placeholder:text-[rgba(67,67,67,0,8)] placeholder:font-medium placeholder:text-[14px] ' type="email" placeholder='Enter Your Email' />
+                    <input name='email' value={email}  onChange={(e) => setEmail(e.target.value)}  className='bg-[rgba(248,249,250,1)] outline-none  w-[340px] h-[48px] placeholder:font-Dm placeholder:text-[rgba(67,67,67,0,8)] placeholder:font-medium placeholder:text-[14px] ' type="email" placeholder='Enter Your Email' />
                   </div>
 
                   <button type='submit' className='active:scale-95 transition-transform w-[180px] h-[48px] bg-[rgba(105,56,239,1)]  rounded-2xl flex items-center justify-center'><span className='text-white font-Dm text-[14px] font-semibold w-[140px] h-[18px]'>Schedule Your Demo</span></button>
