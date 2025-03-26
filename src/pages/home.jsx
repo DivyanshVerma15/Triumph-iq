@@ -287,7 +287,7 @@ function Home() {
         <div className=' h-[850px] w-full mt-[-110px] flex flex-col items-center '>
               
               
-              <div className='flex  flex-wrap items-center content-center gap-[40px] pt-[40px] pr-[30px]  w-full'>
+              <div className='flex  flex-wrap justify-center content-center gap-[40px] pt-[40px] pr-[30px]  w-full'>
                 <div className='w-full md:w-[684px] h-[693px] rounded-2xl'>
                   <img src={Collage3} className="w-full h-full" alt="" />
                 </div>
