@@ -390,7 +390,7 @@ function Home() {
                     <div className='w-[14px] h-[14px]  p-[1px] flex items-center justify-center'>
                       <IoMdMail className='md:w-full w-[10.06px] md:h-full h-[10.06px] text-[#6938ef]' />
                     </div>  
-                    <input name='email' value={email}  onChange={(e) => setEmail(e.target.value)}  className='bg-[rgba(248,249,250,1)] outline-none w-full  md:w-[340px] h-[48px] placeholder:font-Dm placeholder:text-[rgba(67,67,67,0,8)] placeholder:font-medium placeholder:md:text-[14px] placeholder:text-[10px] ' type="email" placeholder='Enter Your Email' />
+                    <input name='email' value={email}  onChange={(e) => setEmail(e.target.value)}  className='bg-[rgba(248,249,250,1)] outline-none w-full  md:w-[340px] md:h-[48px] placeholder:font-Dm placeholder:text-[rgba(67,67,67,0,8)] placeholder:font-medium placeholder:md:text-[14px] placeholder:text-[10px] ' type="email" placeholder='Enter Your Email' />
                   </div>
 
                   <button type='submit' className='active:scale-95 transition-transform w-[130px] md:w-[180px] h-[28px] md:h-[48px] bg-[rgba(105,56,239,1)] md:pt-[15px] md:pb-[15px] md:pl-[20px] md:pr-[20px] p-[8px] rounded-xl md:rounded-2xl flex items-center justify-center'><span className='text-white font-Dm text-[10px] md:text-[14px] font-semibold w-[100px] md:w-[140px] h-[12px] md:h-[18px]'>Schedule Your Demo</span></button>
