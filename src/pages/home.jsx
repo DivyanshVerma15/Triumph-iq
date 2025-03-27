@@ -64,54 +64,55 @@ function Home() {
   return (
     <div>
           
-          <div className='overflow-hidden w-[393px]  md:w-full  h-[448px] md:min-h-[960px] relative' style={{background:" linear-gradient(180deg, #F9F7FF 0%, #EEE8FF 100%)"}}>
+          <div className='overflow-hidden w-[363px]  md:w-full  h-[520px] md:min-h-[960px] relative' style={{background:" linear-gradient(180deg, #F9F7FF 0%, #EEE8FF 100%)"}}>
 
              
           
-          <div className='absolute right-0'>
+          {/* <div className='absolute right-0'>
             <img src={gradient} alt="" />
-          </div>
+          </div> */}
           
           <div>
               <Navbar scroll1 = {scroll} scroll2 = {scroll2}/>
           </div>
 
-          <div  ref = {homeref} className=' w-full h-full md:h-[780px] mt-16 flex flex-col gap-[15px] md:gap-[30px] items-center '>
+          <div  ref = {homeref} className=' w-full h-full md:h-[780px] mt-16 flex flex-col gap-[15px] md:gap-[30px] items-center pt-[10px] pb-[10px] pr-[20px] pl-[20px]'>
 
             
             
-            <div className='w-[353px] h-[210px] md:w-full flex flex-col items-center' >
+            <div className='w-[353px] h-[112px] md:h-[210px] md:w-full flex flex-col items-center' >
               
-              <div className='w-[137px] h-[16px] '><span className='font-Roboto font-medium text-[12px] text-center '>Built by CSM’s, for CSM’s</span></div>
+              <div className= 'w-[115px] md:w-[137px] h-[5px] md:h-[16px] '><span className='font-Roboto font-medium text-[10px] md:text-[12px] text-center '>Built by CSM’s, for CSM’s</span></div>
 
-              <div className="flex ">
+              <div className="flex mt-3 md:mt-0  ">
 
-                <div className=" relative inline-block">
-                  <img src={bgImg} className="w-[270.11px] h-[99.4px]" alt="background" />
-                  <span className="absolute inset-0 text-center font-Roboto font-semibold text-[65px]">
+                <div className=" relative inline-block ml-2 md:ml-0">
+                  <img src={bgImg} className="w-[121.58px] md:w-[270.11px] h-[46.36px] md:h-[99.4px]" alt="background " />
+                  <span className="absolute inset-0 text-center font-Roboto font-semibold text-[30px] md:text-[65px]">
                     Simplify
                   </span>
                 </div>
                 
-                  <div className="text-center font-Roboto font-semibold text-[65px] pl-3 ">Your Customer Success</div>
-                  </div>
-                  <h4 className='text-center font-Roboto font-semibold text-[65px] mt-[-10px] '>And Reduce Churn</h4> 
-                  </div>
+                <div className="text-center font-Roboto font-semibold text-[30px] md:text-[65px] md:pl-3 ">Your Customer Success</div>
+              </div>
+                  
+                <h4 className='text-center font-Roboto font-semibold text-[30px] md:text-[65px] mt-[-10px] '>And Reduce Churn</h4> 
+            </div>
             
-            <div className='md:pl-96 md:pr-96   '> <p className='text-[16px] font-Roboto  italic text-center text-gray-900'>“After years of managing customer relationships through disconnected tools and spreadsheets, I knew there had to be a better way. That's why we are building Triumph IQ” – Founder, Triumph IQ</p></div>
+            <div className='md:pl-96 md:pr-96 mt-3 md:mt-0  '> <p className='text-[12px] md:text-[16px] font-Roboto  italic text-center text-gray-900'>“After years of managing customer relationships through disconnected tools and spreadsheets, I knew there had to be a better way. That's why we are building Triumph IQ” – Founder, Triumph IQ</p></div>
 
           
-            <div  className='flex justify-center items-center mt-4 gap-2 '>
+            <div  className='w-[288.18px] md:w-full h-[28px] flex justify-center items-center  md:mt-4 gap-[2.18px] md:gap-2 '>
             
-            <form onSubmit={handleSubmit} className="flex items-center gap-2  pl-4">
+            <form onSubmit={handleSubmit} className="flex items-center gap-[2.18px] md:gap-2  pl-4">
               
-              <div className='border-[1px] border-purple-100 rounded-xl flex items-center gap-1 pl-4 bg-white'>
-                <IoMdMail className="text-[#6938ef] w-[23px] h-[23px]" />
+              <div className='w-[173px] md:w-full h-[28px] md:h-[58px] border-[1px] border-purple-100 rounded-xl flex items-center gap-1 md:pl-4 pl-[2.73px] pr-[3.55px] pt-[5.46px] pb-[5.46px]  bg-white'>
+                <IoMdMail className="text-[#6938ef] w-[10px] md:w-[23px] h-[10px] md:h-[23px]" />
                 <input
                   name="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className=" text-black w-[368px] h-[56px] font-Roboto text-[16px] font-medium rounded-xl outline-none bg-transparent  focus:ring-0 focus:outline-none autofill:bg-transparent placeholder:font-Roboto placeholder:text-[14px] placeholder:font-medium placeholder:text-gray-700 placeholder:text-opacity-80  "
+                  className=" text-black w-[173px] md:w-[368px] h-[28px] md:h-[56px] font-Roboto text-[10px] md:text-[16px] font-medium rounded-xl outline-none bg-transparent  focus:ring-0 focus:outline-none autofill:bg-transparent placeholder:font-Roboto placeholder:md:text-[14px] placeholder:text-[10px] placeholder:font-medium placeholder:text-gray-700 placeholder:text-opacity-80  "
                   type="email"
                   placeholder="Enter your Email"
                   required
@@ -120,7 +121,7 @@ function Home() {
                 
               <button
                 type="submit"
-                className="pl-3 pr-3 bg-[#6938ef] w-full h-[56px] font-Roboto text-[16px] text-white font-medium rounded-xl active:scale-95 transition-transform border-[1.5px]-black"
+                className="md:pl-3 md:pr-3 p-[8px] bg-[#6938ef] w-[113px] md:w-full h-[28px] md:h-[56px] font-Roboto text-[10px] md:text-[16px] text-white font-medium rounded-xl active:scale-95 transition-transform border-[1.5px]-black"
               >
                 <span className='font-normal' >Request Early Access</span>
               </button>
@@ -364,7 +365,7 @@ function Home() {
               </div>
         </div>
         
-        <div className='w-[393px] md:w-full h-[227.44px] md:h-[539.16px] bg-[rgba(211,199,244,1)] mt-[1px] pt-[24.31px] pb-[24.31px] md:pt-[80px] md:pb-[80px] pr-[18.23px] md:pr-[20px] pl-[18.23px] md:pl-[20px] flex items-center justify-center rounded-3xl'>
+        <div className='w-[363px] md:w-full h-[227.44px] md:h-[539.16px] bg-[rgba(211,199,244,1)] mt-[1px] pt-[24.31px] pb-[24.31px] md:pt-[80px] md:pb-[80px] pr-[18.23px] md:pr-[20px] pl-[18.23px] md:pl-[20px] flex items-center justify-center rounded-3xl'>
           
           <div className='w-[356.54px] md:w-[1240px] h-[178.83px] md:h-[379.16px]  rounded-2xl bg-white  md:pt-[48px] md:pb-[48px] md:pr-[29px] md:pl-[29px] pt-[14.58px] pb-[14.58px] pr-[8.81pxpx] pl-[8.81pxpx] flex justify-between items-center shadow-lg'>
             
@@ -427,7 +428,7 @@ function Home() {
         </div>
 
 
-        <div className='w-[393px] md:w-full  mt-3 md:mt-0 text-center md:mb-5 '>
+        <div className='w-[363px] md:w-full  mt-3 md:mt-0 text-center md:mb-5 '>
           <span className='font-Roboto font-normal text-[10px] md:text-[20px] text-gray-800'> Copyright © 2025 Triumph IQ</span>
         </div>
 
