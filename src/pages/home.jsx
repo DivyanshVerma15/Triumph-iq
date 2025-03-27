@@ -64,7 +64,7 @@ function Home() {
   return (
     <div>
           
-          <div className='overflow-hidden w-[363px]  md:w-full  h-[520px] md:min-h-[960px] relative' style={{background:" linear-gradient(180deg, #F9F7FF 0%, #EEE8FF 100%)"}}>
+          <div className='overflow-hidden w-[393px]  md:w-full  h-[460px] md:min-h-[960px] relative' style={{background:" linear-gradient(180deg, #F9F7FF 0%, #EEE8FF 100%)"}}>
 
              
           
@@ -76,7 +76,7 @@ function Home() {
               <Navbar scroll1 = {scroll} scroll2 = {scroll2}/>
           </div>
 
-          <div  ref = {homeref} className=' w-full h-full md:h-[780px] mt-16 flex flex-col gap-[15px] md:gap-[30px] items-center pt-[10px] pb-[10px] pr-[20px] pl-[20px]'>
+          <div  ref = {homeref} className=' w-full h-full md:h-[780px] md:mt-16 flex flex-col gap-[15px] md:gap-[30px] items-center pt-[10px] pb-[10px] pr-[20px] pl-[20px]'>
 
             
             
@@ -140,7 +140,7 @@ function Home() {
           
         </div>
 
-          <div className='pr-[8.87px] pl-[8.87px] pb-[13.31px]'>
+          <div className='w-[393px] md:w-full pr-[8.87px] pl-[8.87px] pb-[13.31px]'>
             <div className='text-center w-[full] h-[60px] md:h-[85px] mt-5'>
               <h3 className='text-[24px] md:text-[45px] font-Roboto font-bold'>Customer Success Is Tough!</h3>
             </div>
@@ -156,7 +156,7 @@ function Home() {
               
             
         
-          <div style={{background:'rgb(245,242,255)'}} className='h-[572.06px] md:h-[419px]  p-[0.5em] mt-[50px] md:mt-24 pl-[33.54px]  pr-[33.54px]'  >    
+          <div style={{background:'rgb(245,242,255)'}} className='w-[393px] md:w-full h-[590px] md:h-[419px]  p-[0.5em] mt-[20px] md:mt-24 pl-[33.54px]  pr-[33.54px]'  >    
             
             <div className='text-center w-full h-[74px] md:h-[85px] mt-[12px] md:mt-[25px]  '>
               <h3 className='text-[24px] md:text-[45px] font-Roboto font-bold text-[rgba(16,16,16,1)]'>That’s why we are building Triumph IQ</h3>
@@ -174,7 +174,7 @@ function Home() {
           </div>
         
 
-        <div className='h-[780.24px] md:h-[850px] w-full mt-14 flex flex-col items-center'>
+        <div className='w-[393px]  h-[780.24px] md:h-[850px] md:w-full mt-14 flex flex-col items-center'>
               <div className='pt-4 w-full h-[65px]'>
                 <h3 className='text-[24px]  md:text-[45px] font-Roboto font-bold text-center text-[rgba(16,16,16,1)]'>Features That Transform Your Customer Success</h3>
               </div>
@@ -232,7 +232,7 @@ function Home() {
         
 
 
-         <div className='h-[880px]  md:h-[850px] w-full mt-10 '>
+         <div className='w-[393px] h-[880px]  md:h-[850px] md:w-full mt-10 '>
               
               <div className='flex flex-wrap justify-center content-center gap-[1px] md:gap-[40px] md:pt-[40px] pt-[21.65px] pb-[21.65px] pr-[20px] pl-[20px] md:pl-[40px]  w-full'>
                
@@ -285,7 +285,7 @@ function Home() {
               </div>
         </div> 
 
-        <div className='h-[800px] md:h-[850px]  mt-[-110px] flex flex-col items-center '>
+        <div className='w-[393px] md:w-full h-[800px] md:h-[850px]  mt-[-110px] flex flex-col items-center '>
               
               
               <div className='flex  flex-wrap justify-center content-center gap-[15px] pt-[21.65px] pb-[21.65px] pr-[20px] pl-[20px] md:gap-[40px] md:pt-[40px] md:pr-[30px] w-full'>
@@ -365,7 +365,7 @@ function Home() {
               </div>
         </div>
         
-        <div className='w-[363px] md:w-full h-[227.44px] md:h-[539.16px] bg-[rgba(211,199,244,1)] mt-[1px] pt-[24.31px] pb-[24.31px] md:pt-[80px] md:pb-[80px] pr-[18.23px] md:pr-[20px] pl-[18.23px] md:pl-[20px] flex items-center justify-center rounded-3xl'>
+        <div className='w-[393px] md:w-full h-[227.44px] md:h-[539.16px] bg-[rgba(211,199,244,1)] mt-[1px] pt-[24.31px] pb-[24.31px] md:pt-[80px] md:pb-[80px] pr-[18.23px] md:pr-[20px] pl-[18.23px] md:pl-[20px] flex items-center justify-center rounded-3xl'>
           
           <div className='w-[356.54px] md:w-[1240px] h-[178.83px] md:h-[379.16px]  rounded-2xl bg-white  md:pt-[48px] md:pb-[48px] md:pr-[29px] md:pl-[29px] pt-[14.58px] pb-[14.58px] pr-[8.81pxpx] pl-[8.81pxpx] flex justify-between items-center shadow-lg'>
             
@@ -386,12 +386,14 @@ function Home() {
               <div className='w-[329.19px] md:w-[566px] h-[28px] md:h-[48px] flex gap-[2.18px] md:gap-[10px] items-center'>
                 <form onSubmit={handleSubmit} className='flex gap-3 items-center w-full h-full md:w-[556px]  '>
                     
-                  <div className='w-[217px] md:w-full  h-[28px] border-[1px] border-[rgba(234,237,240,1)] pl-2  flex items-center  gap-4 rounded-lg bg-[rgba(248,249,250,1)]'>     
-                    <IoMdMail className='text-[#6938ef]' />
-                    <input name='email' value={email}  onChange={(e) => setEmail(e.target.value)}  className='bg-[rgba(248,249,250,1)] outline-none w-full  md:w-[340px] h-[48px] placeholder:font-Dm placeholder:text-[rgba(67,67,67,0,8)] placeholder:font-medium placeholder:text-[14px] ' type="email" placeholder='Enter Your Email' />
+                  <div className='w-[217px] md:w-full  h-[28px] md:h-[48px] border-[1px] border-[rgba(234,237,240,1)] pl-2  flex items-center gap-[8px] md:gap-4 rounded-lg bg-[rgba(248,249,250,1)]'>     
+                    <div className='w-[14px] h-[14px]  p-[1px] flex items-center justify-center'>
+                      <IoMdMail className='md:w-full w-[10.06px] md:h-full h-[10.06px] text-[#6938ef]' />
+                    </div>  
+                    <input name='email' value={email}  onChange={(e) => setEmail(e.target.value)}  className='bg-[rgba(248,249,250,1)] outline-none w-full  md:w-[340px] h-[48px] placeholder:font-Dm placeholder:text-[rgba(67,67,67,0,8)] placeholder:font-medium placeholder:md:text-[14px] placeholder:text-[10px] ' type="email" placeholder='Enter Your Email' />
                   </div>
 
-                  <button type='submit' className='active:scale-95 transition-transform w-[130px] md:w-[180px] h-[28px] md:h-[48px] bg-[rgba(105,56,239,1)] rounded-xl md:rounded-2xl flex items-center justify-center'><span className='text-white font-Dm text-[10px] md:text-[14px] font-semibold w-[100px] md:w-[140px] h-[12px] md:h-[18px]'>Schedule Your Demo</span></button>
+                  <button type='submit' className='active:scale-95 transition-transform w-[130px] md:w-[180px] h-[28px] md:h-[48px] bg-[rgba(105,56,239,1)] md:pt-[15px] md:pb-[15px] md:pl-[20px] md:pr-[20px] p-[8px] rounded-xl md:rounded-2xl flex items-center justify-center'><span className='text-white font-Dm text-[10px] md:text-[14px] font-semibold w-[100px] md:w-[140px] h-[12px] md:h-[18px]'>Schedule Your Demo</span></button>
                 </form>
                 
                 
