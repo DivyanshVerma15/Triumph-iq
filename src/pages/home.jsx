@@ -68,9 +68,9 @@ function Home() {
 
              
           
-          {/* <div className='absolute right-0'>
-            <img src={gradient} alt="" />
-          </div> */}
+          <div className='w-[94.43px] h-[93.06px] md:w-[346px] md:h-[341px] absolute right-0'>
+            <img className='object-contain' src={gradient} alt="" />
+          </div>
           
           <div>
               <Navbar scroll1 = {scroll} scroll2 = {scroll2}/>
@@ -78,35 +78,56 @@ function Home() {
 
           <div  ref = {homeref} className=' w-full h-full md:h-[780px] md:mt-16 flex flex-col gap-[15px] md:gap-[30px] items-center pt-[10px] pb-[10px] pr-[20px] pl-[20px]'>
 
-            
-            
-            <div className='w-[353px] h-[112px] md:h-[210px] md:w-full flex flex-col items-center' >
+            {window.screen.width > 748?
+            <div className=' md:h-[210px] md:w-full flex flex-col items-center' >
               
-              <div className= 'w-[115px] md:w-[137px] h-[5px] md:h-[16px] '><span className='font-Roboto font-medium text-[10px] md:text-[12px] text-center '>Built by CSM’s, for CSM’s</span></div>
+              <div className= ' md:w-[137px]  md:h-[16px] '><span className='font-Roboto font-medium  md:text-[12px] text-center '>Built by CSM’s, for CSM’s</span></div>
 
               <div className="flex mt-3 md:mt-0  ">
 
                 <div className=" relative inline-block ml-2 md:ml-0">
-                  <img src={bgImg} className="w-[121.58px] md:w-[270.11px] h-[46.36px] md:h-[99.4px]" alt="background " />
-                  <span className="absolute inset-0 text-center font-Roboto font-semibold text-[30px] md:text-[65px]">
+                  <img src={bgImg} className=" md:w-[270.11px]  md:h-[99.4px]" alt="background " />
+                  <span className="absolute inset-0 text-center font-Roboto font-semibold  md:text-[65px]">
                     Simplify
                   </span>
                 </div>
                 
-                <div className="text-center font-Roboto font-semibold text-[30px] md:text-[65px] md:pl-3 ">Your Customer Success</div>
+                <div className="text-center font-Roboto font-semibold  md:text-[65px] md:pl-3 ">Your Customer Success</div>
               </div>
                   
-                <h4 className='text-center font-Roboto font-semibold text-[30px] md:text-[65px] mt-[-10px] '>And Reduce Churn</h4> 
+                <h4 className='text-center font-Roboto font-semibold  md:text-[65px] mt-[-10px] '>And Reduce Churn</h4> 
+            </div>:
+            <div className='w-[353px] h-[112px]  flex flex-col items-center' >
+              
+            <div className= 'w-[115px]  h-[5px]  '><span className='font-Roboto font-medium text-[10px]  text-center '>Built by CSM’s, for CSM’s</span></div>
+
+            <div className="flex mt-5 md:mt-0  ">
+
+              <div className=" relative inline-block ml-2 ">
+                <img src={bgImg} className="w-[121.58px]  h-[46.36px]" alt="background " />
+                <span className="absolute inset-0 text-center font-Roboto font-bold text-[30px] ">
+                  Simplify
+                </span>
+              </div>
+              
+              <div className="text-center font-Roboto font-bold text-[30px]  md:pl-3 ">Your Customer </div>
             </div>
+                
+              <h4 className='text-center font-Roboto font-bold text-[30px]  mt-[-10px] '>Success And Reduce </h4> 
+              <h4 className='text-center font-Roboto font-bold text-[30px]  mt-[-10px] '>Churn </h4> 
+          </div>
+            }
             
-            <div className='md:pl-96 md:pr-96 mt-3 md:mt-0  '> <p className='text-[12px] md:text-[16px] font-Roboto  italic text-center text-gray-900'>“After years of managing customer relationships through disconnected tools and spreadsheets, I knew there had to be a better way. That's why we are building Triumph IQ” – Founder, Triumph IQ</p></div>
+            
+            
+            <div className='md:pl-96 md:pr-96 mt-3 md:mt-[-20px]  '> <p className='text-[12px] md:text-[16px] font-Roboto  italic text-center text-gray-900'>“After years of managing customer relationships through disconnected tools and spreadsheets, I knew there had to be a better way. That's why we are building Triumph IQ” – Founder, Triumph IQ</p></div>
 
           
             <div  className='w-[288.18px] md:w-full h-[28px] flex justify-center items-center  md:mt-4 gap-[2.18px] md:gap-2 '>
             
             <form onSubmit={handleSubmit} className="flex items-center gap-[2.18px] md:gap-2  pl-4">
               
-              <div className='w-[173px] md:w-full h-[28px] md:h-[58px] border-[1px] border-purple-100 rounded-xl flex items-center gap-1 md:pl-4 pl-[2.73px] pr-[3.55px] pt-[5.46px] pb-[5.46px]  bg-white'>
+              <div className='w-[173px] md:w-full h-[28px] md:h-[58px] border-[1px] border-purple-100 rounded-xl flex items-center gap-1 md:pl-4 pl-[7px] pr-[3.55px] pt-[5.46px] pb-[5.46px]  bg-white'>
                 <IoMdMail className="text-[#6938ef] w-[10px] md:w-[23px] h-[10px] md:h-[23px]" />
                 <input
                   name="email"
@@ -232,60 +253,117 @@ function Home() {
         
 
 
-         <div className='w-[393px] h-[880px]  md:h-[850px] md:w-full mt-10 '>
+         {window.screen.width > 768? 
+                <div className='w-[393px] h-[880px]  md:h-[850px] md:w-full mt-10 '>
+                      
+                <div className='flex flex-wrap justify-center content-center gap-[1px] md:gap-[40px] md:pt-[40px] pt-[21.65px] pb-[21.65px] pr-[20px] pl-[20px] md:pl-[40px]  w-full'>
+                  
+                  
+                  <div className='w-full md:w-[548px] h-[400px] rounded-2xl  flex flex-col gap-[10px] md:gap-[30px]  '>
+                    
+                  <div className='shadow-xl w-[353px] md:w-[548px] h-[193px] md:h-[270px] flex flex-col gap-[10.83px] md:gap-[20px] p-[16.24px] md:p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
+                        <div className='flex flex-col gap-[5.41px] md:gap-[20px]'>
+                          <h3 className='w-[320.52px]  md:w-[488px] h-[21px] md:h-[35px] text-[rgba(16,16,16,0.8)] font-Roboto font-semibold text-[18px] md:text-[30px]'>Manage customer communication</h3>
+
+                          <p className='font-Roboto font-normal w-[320.52px] md:w-[488px] h-[54px] md:h-[46px] text-[12px] md:text-[14px] text-[rgba(67,67,67,1)]'>When should you reach out, or when was your last conversation? Still a question? Let Us Guide Your Customer Engagement and deliver maximum value.</p>
+                        </div>
+                        
+                        <div>
+                          <ul className=' md:mt-4 flex flex-col gap-[5.41px] md:gap-2' >
+                            <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Automatically capture customer communications</li>
+                            
+                            <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Create engagement formulas to get the right alerts</li>
+                            
+                            <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Integrate easily with your communication platforms</li>
+                            
+                          </ul>
+                        </div>
+
+                      </div>
+
+                      <div className=' shadow-xl w-[353px] md:w-[548px] h-[169px] md:h-[270px] flex flex-col gap-[10.83px] md:gap-[20px] p-[16.24px] md:p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
+                        <div className='flex flex-col gap-[5.41px] md:gap-[20px]'>
+                          <h3 className='w-[320.52px] md:w-[488px] h-[19px] md:h-[35px] text-[rgba(16,16,16,0.8)] font-Roboto font-semibold text-[16.24px] md:text-[30px]'>Predictive Churn Score</h3>
+
+                          <p className='font-Roboto font-normal w-[320.52px] md:w-[488px] h-[32px] md:h-[46px] text-[12px] md:text-[14px] text-[rgba(67,67,67,1)]'>70% of CSMs find it difficult to assess customer health - leading to unexpected churn.</p>
+                        </div>
+                        
+                        <div>
+                          <ul className=' flex flex-col gap-[5.41px] md:gap-2 w-[304px]' >
+                            <li className=' text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Track feature adoption, product usage for better visibility</li>
+                            <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Setup custom risk formula - as per your needs</li>
+                            <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Get actionable insights for at-risk accounts</li>
+                            
+                          </ul>
+                        </div>
+
+                      </div>
+                    
+                    
+                  </div>
+                  <div  className = 'w-[350px] h-[315px] md:w-[684px] md:h-[570px] rounded-2xl'>
+                    <img src={Collage2} className="w-full h-full" alt="" />
+                  </div>
+                </div>
+          </div> :
+
+          <div className='w-[393px] h-[840px]  md:h-[850px] md:w-full mt-10 '>
+                        
+          <div className='flex flex-wrap justify-center content-center gap-[1px] md:gap-[40px] md:pt-[40px] pt-[21.65px] pb-[21.65px] pr-[20px] pl-[20px] md:pl-[40px]  w-full'>
+          
+            
+            <div className='w-full md:w-[548px] h-[400px] rounded-2xl  flex flex-col gap-[10px] md:gap-[30px]  '>
+
+            <div  className = 'w-[350px] h-[315px] md:w-[684px] md:h-[570px] rounded-2xl'>
+              <img src={Collage2} className="w-full h-full" alt="" />
+            </div>
               
-              <div className='flex flex-wrap justify-center content-center gap-[1px] md:gap-[40px] md:pt-[40px] pt-[21.65px] pb-[21.65px] pr-[20px] pl-[20px] md:pl-[40px]  w-full'>
-               
-                
-                <div className='w-full md:w-[548px] h-[400px] rounded-2xl  flex flex-col gap-[10px] md:gap-[30px]  '>
-                  
-                <div className='shadow-xl w-[353px] md:w-[548px] h-[193px] md:h-[270px] flex flex-col gap-[10.83px] md:gap-[20px] p-[16.24px] md:p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
-                      <div className='flex flex-col gap-[5.41px] md:gap-[20px]'>
-                        <h3 className='w-[320.52px]  md:w-[488px] h-[21px] md:h-[35px] text-[rgba(16,16,16,0.8)] font-Roboto font-semibold text-[18px] md:text-[30px]'>Manage customer communication</h3>
+            <div className='shadow-xl w-[353px] md:w-[548px] h-[193px] md:h-[270px] flex flex-col gap-[10.83px] md:gap-[20px] p-[16.24px] md:p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
+                  <div className='flex flex-col gap-[5.41px] md:gap-[20px]'>
+                    <h3 className='w-[320.52px]  md:w-[488px] h-[21px] md:h-[35px] text-[rgba(16,16,16,0.8)] font-Roboto font-semibold text-[18px] md:text-[30px]'>Manage customer communication</h3>
 
-                        <p className='font-Roboto font-normal w-[320.52px] md:w-[488px] h-[54px] md:h-[46px] text-[12px] md:text-[14px] text-[rgba(67,67,67,1)]'>When should you reach out, or when was your last conversation? Still a question? Let Us Guide Your Customer Engagement and deliver maximum value.</p>
-                      </div>
+                    <p className='font-Roboto font-normal w-[320.52px] md:w-[488px] h-[54px] md:h-[46px] text-[12px] md:text-[14px] text-[rgba(67,67,67,1)]'>When should you reach out, or when was your last conversation? Still a question? Let Us Guide Your Customer Engagement and deliver maximum value.</p>
+                  </div>
+                  
+                  <div>
+                    <ul className=' md:mt-4 flex flex-col gap-[5.41px] md:gap-2' >
+                      <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Automatically capture customer communications</li>
                       
-                      <div>
-                        <ul className=' md:mt-4 flex flex-col gap-[5.41px] md:gap-2' >
-                          <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Automatically capture customer communications</li>
-                          
-                          <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Create engagement formulas to get the right alerts</li>
-                          
-                          <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Integrate easily with your communication platforms</li>
-                          
-                        </ul>
-                      </div>
-
-                    </div>
-
-                    <div className=' shadow-xl w-[353px] md:w-[548px] h-[169px] md:h-[270px] flex flex-col gap-[10.83px] md:gap-[20px] p-[16.24px] md:p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
-                      <div className='flex flex-col gap-[5.41px] md:gap-[20px]'>
-                        <h3 className='w-[320.52px] md:w-[488px] h-[19px] md:h-[35px] text-[rgba(16,16,16,0.8)] font-Roboto font-semibold text-[16.24px] md:text-[30px]'>Predictive Churn Score</h3>
-
-                        <p className='font-Roboto font-normal w-[320.52px] md:w-[488px] h-[32px] md:h-[46px] text-[12px] md:text-[14px] text-[rgba(67,67,67,1)]'>70% of CSMs find it difficult to assess customer health - leading to unexpected churn.</p>
-                      </div>
+                      <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Create engagement formulas to get the right alerts</li>
                       
-                      <div>
-                        <ul className=' flex flex-col gap-[5.41px] md:gap-2 w-[304px]' >
-                          <li className=' text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Track feature adoption, product usage for better visibility</li>
-                          <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Setup custom risk formula - as per your needs</li>
-                          <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Get actionable insights for at-risk accounts</li>
-                          
-                        </ul>
-                      </div>
+                      <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Integrate easily with your communication platforms</li>
+                      
+                    </ul>
+                  </div>
 
-                    </div>
-                  
-                  
                 </div>
-                <div  className = 'w-[350px] h-[315px] md:w-[684px] md:h-[570px] rounded-2xl'>
-                  <img src={Collage2} className="w-full h-full" alt="" />
-                </div>
-              </div>
-        </div> 
 
-        <div className='w-[393px] md:w-full h-[800px] md:h-[850px]  mt-[-110px] flex flex-col items-center '>
+                <div className=' shadow-xl w-[353px] md:w-[548px] h-[169px] md:h-[270px] flex flex-col gap-[10.83px] md:gap-[20px] p-[16.24px] md:p-[30px] bg-white/80 rounded-2xl border-[1px] border-purple-600/15'>
+                  <div className='flex flex-col gap-[5.41px] md:gap-[20px]'>
+                    <h3 className='w-[320.52px] md:w-[488px] h-[19px] md:h-[35px] text-[rgba(16,16,16,0.8)] font-Roboto font-semibold text-[16.24px] md:text-[30px]'>Predictive Churn Score</h3>
+
+                    <p className='font-Roboto font-normal w-[320.52px] md:w-[488px] h-[32px] md:h-[46px] text-[12px] md:text-[14px] text-[rgba(67,67,67,1)]'>70% of CSMs find it difficult to assess customer health - leading to unexpected churn.</p>
+                  </div>
+                  
+                  <div>
+                    <ul className=' flex flex-col gap-[5.41px] md:gap-2 w-[304px]' >
+                      <li className=' text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Track feature adoption, product usage for better visibility</li>
+                      <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Setup custom risk formula - as per your needs</li>
+                      <li className='text-[12px] md:text-16px font-Roboto font-normal text-[rgba(67,67,67,0.8)] ml-[-5px]'><span className='mr-[10px]'>✔️</span>Get actionable insights for at-risk accounts</li>
+                      
+                    </ul>
+                  </div>
+
+                </div>
+              
+              
+            </div>
+            
+          </div>
+          </div> 
+        }
+
+        <div className='w-[393px] md:w-full h-[820px] md:h-[850px]  mt-[-110px] flex flex-col items-center '>
               
               
               <div className='flex  flex-wrap justify-center content-center gap-[15px] pt-[21.65px] pb-[21.65px] pr-[20px] pl-[20px] md:gap-[40px] md:pt-[40px] md:pr-[30px] w-full'>
@@ -390,7 +468,7 @@ function Home() {
                     <div className='w-[14px] h-[14px]  p-[1px] flex items-center justify-center'>
                       <IoMdMail className='md:w-full w-[10.06px] md:h-full h-[10.06px] text-[#6938ef]' />
                     </div>  
-                    <input name='email' value={email}  onChange={(e) => setEmail(e.target.value)}  className='bg-[rgba(248,249,250,1)] outline-none w-full  md:w-[340px] md:h-[48px] placeholder:font-Dm placeholder:text-[rgba(67,67,67,0,8)] placeholder:font-medium placeholder:md:text-[14px] placeholder:text-[10px] ' type="email" placeholder='Enter Your Email' />
+                    <input name='email' value={email}  onChange={(e) => setEmail(e.target.value)}  className='bg-[rgba(248,249,250,1)] outline-none w-full  md:w-[340px] md:h-[45px] placeholder:font-Dm placeholder:text-[rgba(67,67,67,0,8)] placeholder:font-medium placeholder:md:text-[14px] placeholder:text-[10px] ' type="email" placeholder='Enter Your Email' />
                   </div>
 
                   <button type='submit' className='active:scale-95 transition-transform w-[130px] md:w-[180px] h-[28px] md:h-[48px] bg-[rgba(105,56,239,1)] md:pt-[15px] md:pb-[15px] md:pl-[20px] md:pr-[20px] p-[8px] rounded-xl md:rounded-2xl flex items-center justify-center'><span className='text-white font-Dm text-[10px] md:text-[14px] font-semibold w-[100px] md:w-[140px] h-[12px] md:h-[18px]'>Schedule Your Demo</span></button>
@@ -414,11 +492,11 @@ function Home() {
           <div className='w-[353px]  md:w-[1312px] h-[55px] md:h-[100px]  md:ml-[70px] mt-[-20px] flex flex-col  gap-[8px] md:gap-[1px] '>
               
               
-                <div className='w-full md:w-[420px] h-full flex items-center '>
+                <div className='w-full md:w-[420px] h-full flex items-center justify-center md:justify-start '>
                   <h2 className='font-Roboto font-bold text-[25px] md:text-[24px] '>Contact Us</h2>
                 </div>
 
-                <div className='w-[344.54px] md:w-[334px] h-[18px] md:h-full flex items-center '>
+                <div className='w-[344.54px] md:w-[334px] h-[18px] md:h-full flex items-center justify-center md:justify-start '>
                   <a className='font-Roboto text-[15px] md:text-[20px] text-indigo-600 ' href="hello@triumphIQ.com">hello@triumphiq.com</a>
                 </div>
               </div>
@@ -429,8 +507,10 @@ function Home() {
           </div>
         </div>
 
+        <hr className='border-1px border-[rgba(67,67,67,0.15)] mt-2 md:mt-0 w-[393px] md:w-full md:h-[15px]'/>
 
-        <div className='w-[363px] md:w-full  mt-3 md:mt-0 text-center md:mb-5 '>
+
+        <div className='w-[363px] md:w-full h-[20px] mt-2  md:mt-0 text-center md:mb-5 flex item-center justify-center ml-2'>
           <span className='font-Roboto font-normal text-[10px] md:text-[20px] text-gray-800'> Copyright © 2025 Triumph IQ</span>
         </div>
 
